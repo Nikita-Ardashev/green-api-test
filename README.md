@@ -4,6 +4,15 @@
 текстовых сообщений **Telegram** через [GREEN-API](https://green-api.com/telegram). Внешний вид повторяет
 [Telegram Web](https://web.telegram.org/).
 
+![Переписка](docs/screenshots/04-chat.png)
+
+<p>
+  <img src="docs/screenshots/05-mobile-list.png" width="240" alt="Список чатов на телефоне">
+  <img src="docs/screenshots/06-mobile-chat.png" width="240" alt="Переписка на телефоне">
+</p>
+
+Остальные экраны — в папке [docs/screenshots](docs/screenshots).
+
 ## Возможности
 
 - Вход по учётным данным инстанса GREEN-API (`idInstance`, `apiTokenInstance`, `apiUrl`) с проверкой

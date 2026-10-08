@@ -38,8 +38,7 @@ export function avatarColor(seed: string): string {
 }
 
 export function initials(title: string): string {
-  const words = title.replace(/[^\p{L}\p{N}\s]/gu, '').trim().split(/\s+/).filter(Boolean);
-  if (words.length === 0) return '#';
+  const words = title.replace(/[^\p{L}\s]/gu, '').trim().split(/\s+/).filter(Boolean);
   return words
     .slice(0, 2)
     .map((word) => word[0].toUpperCase())

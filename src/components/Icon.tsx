@@ -6,7 +6,8 @@ const PATHS = {
   send: 'M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z',
   logout: 'M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 17l-5-5 5-5M5 12h11',
   close: 'M6 6l12 12M18 6 6 18',
-  alert: 'M12 8v5M12 16.5v.5M12 3l10 18H2z',
+  user: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4.5 20.5c.8-3.6 3.9-6 7.5-6s6.7 2.4 7.5 6',
+  alert:'M12 8v5M12 16.5v.5M12 3l10 18H2z',
 } as const;
 
 export type IconName = keyof typeof PATHS;

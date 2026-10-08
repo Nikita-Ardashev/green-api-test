@@ -1,7 +1,9 @@
 import { avatarColor, initials } from '../lib/format';
+import { Icon } from './Icon';
 
 export function Avatar({ seed, title, size = 54 }: { seed: string; title: string; size?: number }) {
   const color = avatarColor(seed);
+  const letters = initials(title);
   return (
     <div
       className="avatar"
@@ -13,7 +15,7 @@ export function Avatar({ seed, title, size = 54 }: { seed: string; title: string
       }}
       aria-hidden="true"
     >
-      {initials(title)}
+      {letters || <Icon name="user" size={Math.round(size * 0.5)} />}
     </div>
   );
 }
